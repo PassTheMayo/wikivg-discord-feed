@@ -16,8 +16,6 @@ func init() {
 	if err := config.ReadFile("config.yml"); err != nil {
 		log.Fatal(err)
 	}
-
-	log.Println(lastCheck)
 }
 
 func main() {

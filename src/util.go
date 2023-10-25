@@ -96,8 +96,6 @@ func ReadLastFetchTimestamp() time.Time {
 	data, err := os.ReadFile("timestamp.txt")
 
 	if err != nil {
-		log.Println(err)
-
 		if errors.Is(err, os.ErrNotExist) {
 			return now
 		}
